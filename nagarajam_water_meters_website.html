@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagarajam Water Meters & Engineering Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brand-600 text-white p-2.5 rounded-xl shadow-md">
+                        <i class="fa-solid fa-faucet-drip text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-slate-900 tracking-tight block">NAGARAJAM</span>
+                        <span class="text-xs font-semibold text-brand-600 tracking-wider uppercase block">Water Meters & Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#home" class="hover:text-brand-600 transition">Home</a>
+                    <a href="#water-meters" class="hover:text-brand-600 transition">Water Meters & Billing</a>
+                    <a href="#core-cutting" class="hover:text-brand-600 transition">Core Cutting</a>
+                    <a href="#plumbing" class="hover:text-brand-600 transition">Plumbing Services</a>
+                    <a href="#specs" class="hover:text-brand-600 transition">Specifications</a>
+                    <a href="#contact" class="hover:text-brand-600 transition">Contact Us</a>
+                </nav>
+
+                <!-- Quick Action Button -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://wa.me/919876543210?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20Water%20Meters/Services" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Us</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Home</a>
+            <a href="#water-meters" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Water Meters & Billing</a>
+            <a href="#core-cutting" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Core Cutting</a>
+            <a href="#plumbing" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Plumbing Services</a>
+            <a href="#specs" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Specifications</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-slate-50">Contact Us</a>
+            <div class="pt-2 flex flex-col space-y-2">
+                <a href="tel:+919876543210" class="w-full text-center bg-brand-600 text-white py-2.5 rounded-xl font-semibold text-sm">
+                    <i class="fa-solid fa-phone mr-2"></i> Call +91 98765 43210
+                </a>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="w-full text-center bg-emerald-600 text-white py-2.5 rounded-xl font-semibold text-sm">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-b from-slate-900 to-slate-800 text-white pt-20 pb-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-500/20 text-brand-300 border border-brand-500/30 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved text-brand-400"></i>
+                        <span>ISO Certified & Reliable Engineering</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-white">
+                        Precision Water Meters & Specialized Civil Engineering
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
+                        Your trusted provider for commercial and domestic water metering solutions, sub-billing setup, high-precision concrete core cutting, and turnkey plumbing contracting.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="tel:+919876543210" class="bg-brand-600 hover:bg-brand-500 text-white px-7 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-brand-600/30 transition flex items-center justify-center space-x-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call +91 98765 43210</span>
+                        </a>
+                        <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white px-7 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-emerald-600/30 transition flex items-center justify-center space-x-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur shadow-2xl">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/10 p-5 rounded-xl text-center">
+                                <i class="fa-solid fa-gauge-high text-brand-400 text-3xl mb-2"></i>
+                                <div class="text-2xl font-bold text-white">Class B/IP68</div>
+                                <div class="text-xs text-slate-300">Meter Accuracy Standard</div>
+                            </div>
+                            <div class="bg-white/10 p-5 rounded-xl text-center">
+                                <i class="fa-solid fa-bore-hole text-emerald-400 text-3xl mb-2"></i>
+                                <div class="text-2xl font-bold text-white">2" - 12"</div>
+                                <div class="text-xs text-slate-300">Core Cutting Sizes</div>
+                            </div>
+                            <div class="bg-white/10 p-5 rounded-xl text-center">
+                                <i class="fa-solid fa-building-user text-amber-400 text-3xl mb-2"></i>
+                                <div class="text-2xl font-bold text-white">500+</div>
+                                <div class="text-xs text-slate-300">Apartments & Sites</div>
+                            </div>
+                            <div class="bg-white/10 p-5 rounded-xl text-center">
+                                <i class="fa-solid fa-clock-rotate-left text-cyan-400 text-3xl mb-2"></i>
+                                <div class="text-2xl font-bold text-white">24/7</div>
+                                <div class="text-xs text-slate-300">Contractor Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services Section -->
+    <section class="py-20 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Our Core Specializations</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-2">Comprehensive Solutions for Residential & Commercial Needs</p>
+                <p class="text-slate-600 mt-3">From sub-metering setups in gated communities to industrial concrete slab drilling.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: Water Meters & Billing -->
+                <div id="water-meters" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 hover:shadow-xl transition duration-300 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80" alt="Water Metering" class="h-48 w-full object-cover" onerror="this.src='https://placehold.co/600x400/0284c7/white?text=Water+Meters+Service'">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center mb-4 text-xl">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Water Meters & Billing</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Complete domestic and commercial water meter installations. We provide Automatic Meter Reading (AMR) solutions, sub-metering for apartments, flow meters, and transparent billing system consultation.
+                            </p>
+                            <ul class="space-y-2 text-xs font-medium text-slate-700 mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Single-jet & Multi-jet Water Meters</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Smart AMR / Automated Sub-metering</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Apartment Society Billing Setup</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center font-semibold text-sm text-brand-600 hover:text-brand-700">
+                            Inquire about Water Meters <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Core Cutting -->
+                <div id="core-cutting" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 hover:shadow-xl transition duration-300 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Core Cutting Work" class="h-48 w-full object-cover" onerror="this.src='https://placehold.co/600x400/075985/white?text=Core+Cutting+Service'">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4 text-xl">
+                                <i class="fa-solid fa-ring"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Concrete Core Cutting</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Heavy-duty, vibration-free concrete core drilling for RCC slabs, beams, walls, and foundations. Essential for clean passage of plumbing pipes, electrical ducts, and HVAC lines.
+                            </p>
+                            <ul class="space-y-2 text-xs font-medium text-slate-700 mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Precision holes from 2 inches up to 12 inches</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Vibration-free RCC structure penetration</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Fast execution for high-rise sites</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center font-semibold text-sm text-emerald-600 hover:text-emerald-700">
+                            Book Core Cutting Crew <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Plumbing Contractors -->
+                <div id="plumbing" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 hover:shadow-xl transition duration-300 flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Plumbing Services" class="h-48 w-full object-cover" onerror="this.src='https://placehold.co/600x400/0369a1/white?text=Plumbing+Contractors'">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-4 text-xl">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Plumbing Contractors</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                End-to-end commercial and residential plumbing contracting. We handle CPVC/UPVC pipe network installations, overhead tank setups, pressure pump integrations, and emergency maintenance.
+                            </p>
+                            <ul class="space-y-2 text-xs font-medium text-slate-700 mb-6">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Turnkey plumbing work for new builds</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> High-pressure booster pump fitting</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Leakage detection & maintenance</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center font-semibold text-sm text-amber-600 hover:text-amber-700">
+                            Hire Plumbing Contractor <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Table Section -->
+    <section id="specs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Product Technical Details</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Water Meter Lineup & Specifications</h3>
+                <p class="text-slate-600 mt-2 text-sm">We supply ISO-compliant, magnetically driven, hermetically sealed Class B meters.</p>
+            </div>
+
+            <div class="overflow-x-auto bg-white rounded-2xl border border-slate-200 shadow-sm">
+                <table class="w-full text-left border-collapse min-w-[600px]">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200 text-xs font-bold uppercase text-slate-500 tracking-wider">
+                            <th class="p-4">Size (Inches/mm)</th>
+                            <th class="p-4">Meter Type</th>
+                            <th class="p-4">Measuring Class</th>
+                            <th class="p-4">Max Flow Rate</th>
+                            <th class="p-4">Recommended Application</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-sm font-medium text-slate-700">
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 font-bold text-brand-600">0.5" (15mm)</td>
+                            <td class="p-4">Multi-Jet Dry Dial</td>
+                            <td class="p-4"><span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-semibold">Class B / IP68</span></td>
+                            <td class="p-4">3.0 m³/h</td>
+                            <td class="p-4">Individual Flats & Villas</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 font-bold text-brand-600">0.75" (20mm)</td>
+                            <td class="p-4">Multi-Jet Magnetic Drive</td>
+                            <td class="p-4"><span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-semibold">Class B / IP68</span></td>
+                            <td class="p-4">5.0 m³/h</td>
+                            <td class="p-4">Independent Houses & Small Commercial</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 font-bold text-brand-600">1.0" (25mm)</td>
+                            <td class="p-4">Heavy Duty Brass Body</td>
+                            <td class="p-4"><span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-semibold">Class B / IP68</span></td>
+                            <td class="p-4">7.0 m³/h</td>
+                            <td class="p-4">Apartment Main Lines & Offices</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 font-bold text-brand-600">1.5" (40mm)</td>
+                            <td class="p-4">AMR Ready Flanged/Threaded</td>
+                            <td class="p-4"><span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-semibold">Class B / IP68</span></td>
+                            <td class="p-4">20.0 m³/h</td>
+                            <td class="p-4">Commercial Buildings & Hospitals</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 font-bold text-brand-600">2.0" (50mm)</td>
+                            <td class="p-4">Woltman / Industrial Meter</td>
+                            <td class="p-4"><span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md text-xs font-semibold">Class B / IP68</span></td>
+                            <td class="p-4">30.0 m³/h</td>
+                            <td class="p-4">Factories, Borewells & Main Inlets</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-4 text-xs text-slate-500 text-center">
+                * Pulse output, RS485 Modbus, and IoT smart meter modules are available upon request.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <i class="fa-solid fa-award text-3xl text-amber-400 mb-3"></i>
+                    <h4 class="font-bold text-lg mb-1">Quality Assured</h4>
+                    <p class="text-xs text-slate-400">Tested and calibrated for maximum accuracy and long life.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-user-gear text-3xl text-brand-400 mb-3"></i>
+                    <h4 class="font-bold text-lg mb-1">Expert Operators</h4>
+                    <p class="text-xs text-slate-400">Skilled civil technicians for safe RCC diamond core cutting.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-hand-holding-dollar text-3xl text-emerald-400 mb-3"></i>
+                    <h4 class="font-bold text-lg mb-1">Direct Pricing</h4>
+                    <p class="text-xs text-slate-400">Transparent rates for water meter hardware and site contracting.</p>
+                </div>
+                <div class="p-4">
+                    <i class="fa-solid fa-headset text-3xl text-cyan-400 mb-3"></i>
+                    <h4 class="font-bold text-lg mb-1">On-Site Support</h4>
+                    <p class="text-xs text-slate-400">Fast response team for society billing setups and emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Get In Touch</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Request Quotation or Site Visit</h3>
+                <p class="text-slate-600 mt-2 text-sm">Call us directly, send a WhatsApp message, or leave your inquiry below.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Details Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- Call Card -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                        <div class="bg-brand-50 text-brand-600 p-3 rounded-xl text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Phone Call</h4>
+                            <p class="text-xs text-slate-500 mb-2">Mon-Sat from 8:00 AM to 8:00 PM</p>
+                            <a href="tel:+919876543210" class="text-brand-600 font-bold text-base hover:underline">+91 98765 43210</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Card -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                        <div class="bg-emerald-50 text-emerald-600 p-3 rounded-xl text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Instant WhatsApp</h4>
+                            <p class="text-xs text-slate-500 mb-2">Send us photos or location info for instant quote</p>
+                            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="text-emerald-600 font-bold text-base hover:underline">Click to Open WhatsApp Chat</a>
+                        </div>
+                    </div>
+
+                    <!-- Address Card -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                        <div class="bg-amber-50 text-amber-600 p-3 rounded-xl text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Office Location</h4>
+                            <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+                                Nagarajam Water Meters & Engineering Services<br>
+                                #42, Industrial Main Road, Near Water Works<br>
+                                Your City, State - Pin Code
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-xl text-slate-900 mb-6">Send an Inquiry</h4>
+                        
+                        <div id="form-success" class="hidden mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-sm">
+                            <i class="fa-solid fa-circle-check mr-2 text-emerald-600"></i>
+                            Thank you! Your message has been noted. We will call you back shortly.
+                        </div>
+
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name *</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+                                    <input type="tel" required placeholder="+91 9876543210" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm text-slate-700">
+                                    <option>Water Meters & Apartment Sub-billing</option>
+                                    <option>Concrete Core Cutting Work</option>
+                                    <option>Turnkey Plumbing Contracting</option>
+                                    <option>General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Project Details or Site Address</label>
+                                <textarea rows="4" required placeholder="Describe your requirement (e.g., core cutting size, number of water meters needed)..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-lg font-bold text-white tracking-tight block">NAGARAJAM</span>
+                    <span class="text-xs text-slate-400 block mb-3">Water Meters & Engineering</span>
+                    <p class="text-xs text-slate-500 leading-relaxed">Providing durable water metering products, precise core cutting solutions, and reliable plumbing work.</p>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Services</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#water-meters" class="hover:text-white transition">Water Meters & Billing</a></li>
+                        <li><a href="#core-cutting" class="hover:text-white transition">Concrete Core Cutting</a></li>
+                        <li><a href="#plumbing" class="hover:text-white transition">Plumbing Contracting</a></li>
+                        <li><a href="#specs" class="hover:text-white transition">Meter Specifications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Quick Links</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank" class="hover:text-emerald-400 transition">WhatsApp Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Contact</h5>
+                    <p class="text-xs text-slate-400">Phone: +91 98765 43210</p>
+                    <p class="text-xs text-slate-400 mt-1">Hours: Mon - Sat: 8 AM - 8 PM</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+                &copy; <span id="year"></span> Nagarajam Water Meters & Engineering Services. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu on menu link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Contact form handling
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('form-success');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.reset();
+            successMsg.classList.remove('hidden');
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
