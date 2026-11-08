@@ -109,7 +109,7 @@
                     </div>
                 </div>
 
-                <!-- Right Card / Image Banner Highlight (Simplified with photo now below) -->
+                <!-- Right Card / Banner Highlight -->
                 <div class="lg:col-span-5 hidden lg:block">
                    <div class="p-8 bg-slate-800 border border-slate-700 rounded-3xl text-center space-y-4 shadow-xl">
                        <i class="fa-solid fa-droplet text-5xl text-amber-400"></i>
@@ -141,7 +141,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Water Meters Service & Installation</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Installation and maintenance of all types of domestic, commercial, and industrial water meters.</p>
-                    <a href="tel:8523865112" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Book Installation <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Water Meter Installation')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Book Installation <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
                 <!-- Service 2 -->
@@ -151,7 +151,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Water Meters Suppliers</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Bulk and single unit supply of high-precision water meters and heavy-duty pipe fittings.</p>
-                    <a href="tel:8523865112" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Get Supply Quote <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Water Meter Supply')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Get Supply Quote <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
                 <!-- Service 3 -->
@@ -161,7 +161,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Water Billing System & Bills</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">End-to-end water billing systems, automated bill generation for apartments and commercial complexes.</p>
-                    <a href="#billing" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Water Billing System')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
                 <!-- Service 4 -->
@@ -171,7 +171,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Professional Plumbing Contractors</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Expert residential and commercial plumbing contract work, pipeline laying, and overhaul repairs.</p>
-                    <a href="tel:8523865112" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Call Contractor <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Plumbing Contractor')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Call Contractor <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
                 <!-- Service 5 -->
@@ -181,7 +181,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Concrete Core Cutting & AC Hole Drilling</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision concrete core drilling for plumbing pipelines, ventilation, and AC hole drilling.</p>
-                    <a href="tel:8523865112" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Request Drilling <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Core Cutting')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Request Drilling <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
                 <!-- Service 6 -->
@@ -191,7 +191,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Tile Leakage Repairs & Tile Grouting</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Waterproof tile grouting and targeted bathroom/kitchen tile leakage repair services without destruction.</p>
-                    <a href="tel:8523865112" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline">Fix Leakage <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    <button type="button" onclick="selectService('Tile Leakage Repairs')" class="text-amber-400 font-semibold text-xs inline-flex items-center gap-1 hover:underline bg-transparent border-none cursor-pointer p-0">Fix Leakage <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
                 </div>
 
             </div>
@@ -221,9 +221,7 @@
         </div>
     </section>
 
-    <!-- ############################################################################## -->
-    <!-- NEW SECTION: MEET THE PROPRIETOR (Where the photo fits perfectly carefully) -->
-    <!-- ############################################################################## -->
+    <!-- MEET THE PROPRIETOR SECTION (WITH OWNER PHOTO) -->
     <section id="proprietor" class="py-16 md:py-24 bg-slate-950 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -231,7 +229,6 @@
                 <!-- Left: Authoritative Photo -->
                 <div class="lg:col-span-5 flex justify-center lg:justify-start">
                     <div class="relative group">
-                        <!-- Polished golden border frame -->
                         <div class="absolute -inset-2 bg-gradient-to-b from-amber-500 to-amber-300 rounded-3xl blur-md opacity-30 group-hover:opacity-50 transition-all"></div>
                         
                         <img src="images/owner.png" 
@@ -254,7 +251,7 @@
                     </div>
 
                     <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-                        NAGARAJM Water Meters & Engineering Services operates under the direct guidance of **J K N Srinivasa Rao**. With a commitment to technical precision and operational integrity, he ensures every project—from domestic plumbing repairs to large-scale automated billing systems—is executed with 100% quality assurance. 
+                        NAGARAJM Water Meters & Engineering Services operates under the direct guidance of <strong class="text-white">J K N Srinivasa Rao</strong>. With a commitment to technical precision and operational integrity, he ensures every project—from water meter installations and services to large-scale water billing systems—is executed with 100% quality assurance. 
                     </p>
                     
                     <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
@@ -289,7 +286,6 @@
             </div>
         </div>
     </section>
-    <!-- ############################################################################## -->
 
     <!-- CONTACT & FORM SECTION -->
     <section id="contact" class="py-16 bg-slate-900 border-b border-slate-800">
@@ -340,7 +336,7 @@
                             </div>
                         </div>
 
-                        <!-- INTEGRATED JUSTDIAL DIRECT LINK -->
+                        <!-- JUSTDIAL DIRECT LINK -->
                         <div class="flex items-start gap-4 p-4 bg-slate-950 border border-amber-500/30 rounded-xl">
                             <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg shrink-0">
                                 <i class="fa-solid fa-star"></i>
@@ -355,17 +351,18 @@
                     </div>
                 </div>
 
-                <!-- Web3Forms Contact Form -->
+                <!-- Web3Forms Contact Form (With AJAX and Confirmation Message) -->
                 <div id="contact-form" class="lg:col-span-7">
                     <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
                         <h4 class="text-xl font-bold text-white mb-1">Send a Service Message</h4>
                         <p class="text-slate-400 text-xs mb-6">Fill out the form below to receive an instant call back.</p>
 
-                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                            <!-- Web3Forms Access Key (REPLACE WITH YOUR KEY) -->
-                            <input type="hidden" name="access_key" value="YOUR_NEW_KEY_HERE_FROM_ZOHO">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="space-y-4">
+                            <!-- Web3Forms Verified Access Key -->
+                            <input type="hidden" name="access_key" value="78388bdc-6716-4dbb-ac16-7efd24b5b1a9">
                             <input type="hidden" name="subject" value="New Service Lead from NAGARAJM Website">
-                            <input type="hidden" name="redirect" value="https://nagarajujaladi.github.io/">
+                            <!-- Honeypot spam protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                             <div class="grid sm:grid-cols-2 gap-4">
                                 <div>
@@ -373,14 +370,12 @@
                                     <input type="text" name="name" required placeholder="Full Name" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
-                                    <input type="tel" name="phone" required placeholder="Mobile Number" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
-                                </div>
-                            </div>
-
+									<label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+										<input type="tel" name="phone" required placeholder="10-digit mobile number" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+								</div>
                             <div>
                                 <label class="block text-xs font-semibold text-slate-300 mb-1">Required Service</label>
-                                <select name="service" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <select name="service" id="service-select" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
                                     <option value="Water Meter Installation">Water Meter Service & Installation</option>
                                     <option value="Water Meter Supply">Water Meters Supply</option>
                                     <option value="Water Billing System">Water Billing System & Bills</option>
@@ -401,10 +396,17 @@
                                 <textarea name="message" rows="3" placeholder="Specify requirements or apartment size..." class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
                             </div>
 
-                            <button type="submit" class="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-lg shadow-lg shadow-amber-500/20 text-sm transition-all">
+                            <button type="submit" id="submit-btn" class="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-lg shadow-lg shadow-amber-500/20 text-sm transition-all">
                                 Submit Request Now
                             </button>
                         </form>
+
+                        <!-- Hidden Success Confirmation Card -->
+                        <div id="result" class="hidden mt-4 p-5 bg-emerald-950 border border-emerald-500/50 rounded-xl text-center">
+                            <i class="fa-solid fa-circle-check text-emerald-400 text-3xl mb-2"></i>
+                            <h5 class="text-white font-bold text-base">Request Received Successfully!</h5>
+                            <p class="text-slate-300 text-xs mt-1">Thank you for getting in touch. We have received your request and will contact you soon.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -421,7 +423,7 @@
         </div>
     </footer>
 
-    <!-- STICKY MOBILE ACTION BAR (FOR MOBILE USERS & ANDROID PWA APP) -->
+    <!-- STICKY MOBILE ACTION BAR -->
     <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 p-2 sm:hidden grid grid-cols-3 gap-2">
         <a href="tel:8523865112" class="py-2.5 bg-amber-500 text-slate-950 font-bold rounded-lg text-center text-xs flex items-center justify-center gap-1.5">
             <i class="fa-solid fa-phone"></i> Call
@@ -433,6 +435,70 @@
             <i class="fa-solid fa-star"></i> Justdial
         </a>
     </div>
+
+    <!-- JAVASCRIPT FOR SERVICE SELECTION & FORM AJAX SUBMISSION -->
+    <script>
+        function selectService(serviceName) {
+            const serviceDropdown = document.getElementById('service-select');
+            if (serviceDropdown) {
+                serviceDropdown.value = serviceName;
+            }
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitBtn.innerHTML = "Sending Request...";
+            submitBtn.disabled = true;
+            
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let jsonResponse = await response.json();
+                    if (response.status == 200) {
+                        form.style.display = "none"; // Hide form
+                        result.classList.remove('hidden'); // Show success card
+                        
+                        // Auto-reset form and bring it back after 5 seconds
+                        setTimeout(() => {
+                            result.classList.add('hidden'); // Hide success card
+                            form.reset(); // Clear all input fields
+                            form.style.display = "block"; // Show form again
+                            submitBtn.innerHTML = "Submit Request Now";
+                            submitBtn.disabled = false;
+                        }, 5000);
+
+                    } else {
+                        alert(jsonResponse.message);
+                        submitBtn.innerHTML = "Submit Request Now";
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    alert("Something went wrong!");
+                    submitBtn.innerHTML = "Submit Request Now";
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
 
 </body>
 </html>
